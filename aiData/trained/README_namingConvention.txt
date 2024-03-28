@@ -1,0 +1,28 @@
+File names work in the following way:
+
+weightsBiases_
+*binary number of with 1 representing that input is used and 0 representing that it is not (in order), i.e., 1111111 means all inputs are used, 1100000 means only AREA and BFIHOST are inputs*,
+*number of hidden layers, i.e., 1*,
+(*number of hidden nodes in hidden layer 1, i.e., 8*, *(if exists) number of hidden nodes in hidden layer n, i.e., 6*),
+(*activation function for hidden layer 1, i.e., sigmoid or tanh*, *(if exists) activation function for hidden layer n, i.e., sigmoid or tanh, activation function for output layer n, i.e., sigmoid or tanh*),
+*number of output nodes, i.e., 1*,
+*initial learning rate*, 
+*maximum number of epochs*,
+*frequency of validation checks*,
+*weight biases file number*,
+*random split folder number*,
+*momentum multiplier in use, i.e., 0 or 1*,
+*momentum multiplier value*,
+*either bold driver or annealing in use, i.e., 0 or 1*,
+*bold driver in use, i.e., 0 or 1*,
+*bold driver increase factor*,
+*bold driver decrease factor*,
+*frequency of bold driver checks*,
+*maximum error increase*,
+*maximum learning rate*,
+*minimum learning rate*,
+*annealing start parameter*,
+*annealing end parameter*,
+*weight decay in use, i.e., 0 or 1*,
+*batch learning in use, i.e., 0 or 1*,
+*number of batches split into*
