@@ -473,7 +473,6 @@ def train(
           if learningRate * boldDriverIncreaseFactor < maxLearningRate:
             learningRate *= boldDriverIncreaseFactor
       previousBoldDriverMeanError = currentBoldDriverMeanError
-
       # Store a copy of the weights and biases so they can be reverted to if the bold driver has caused the error function to increase by the predetermined amount
       previousWeightsFromInputToHiddenForBoldDriver = copy.deepcopy(weightsFromInputToHidden)
       previousWeightsFromHiddenToOutputForBoldDriver = copy.deepcopy(weightsFromHiddenToOutput)
